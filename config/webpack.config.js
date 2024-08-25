@@ -72,6 +72,10 @@ module.exports = {
               },
             },
           },
+          {
+            test: /\.svg/,
+            type: "asset/inline",
+          },
           // hanlde otherAsset loader
           {
             test: /\.(ttf|woff2?|map4|map3|avi)$/,
@@ -223,5 +227,5 @@ module.exports = {
     hot: true, // 开启热模块替换
     historyApiFallback: true, // 解决react-router刷新404问题
   },
-  performance: false // 关闭性能分析，提升打包速度
+  performance: false, // 关闭性能分析，提升打包速度
 }
